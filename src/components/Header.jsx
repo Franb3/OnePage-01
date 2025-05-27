@@ -1,7 +1,7 @@
 export const Header = () => {
   return (
     <header className="header">
-      <h1>Estudio de Tatuajes</h1>
+      <h1>Brutal.tattoo</h1>
       <nav>
         <ul>
           <li>
