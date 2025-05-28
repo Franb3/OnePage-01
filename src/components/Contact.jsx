@@ -13,14 +13,15 @@ export const Contact = () => {
         <div className="map-container">
           <h3>Ubicación del estudio</h3>
           <iframe
-            title="Mapa del estudio"
-            src="https://www.openstreetmap.org/export/embed.html?bbox=-99.1397%2C19.4295%2C-99.1277%2C19.4355&layer=mapnik&marker=19.4326%2C-99.1332"
+            title="Mapa del Estudio"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6794.325612850622!2d-71.15645448311899!3d-31.62939246229439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x968f2b0d08254de5%3A0xde9212dc431d708d!2sParque%20BERNARDO%20O&#39;HIGGINS!5e0!3m2!1ses!2scl!4v1748458416890!5m2!1ses!2scl"
           ></iframe>
           <small>
             <a
-              href="https://www.openstreetmap.org/?mlat=19.4326&mlon=-99.1332#map=17/19.4326/-99.1332"
+              href="https://maps.app.goo.gl/RhuEgwZ8TeF4gamz5"
               target="_blank"
               rel="noopener noreferrer"
+              class="map-button"
             >
               Ver mapa más grande
             </a>

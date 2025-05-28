@@ -117,10 +117,9 @@ body {
 .contact-form {
   gap: 10px;
   background-color: #fff;
-  border: 0.5rem solid #000;
   border-radius: 1rem;
   margin: 2rem;
-  padding: 1rem;
+  padding: 4rem;
   max-width: 15rem;
   max-height: 20rem;
   display: flex;
@@ -129,13 +128,12 @@ body {
   align-items: center;
   text-align: left;
   font-size: 20px;
-  box-shadow: 15px 15px 0 #af97ff;
 }
 
 .contact-form input,
 .contact-form textarea {
-  width: 100%;
-  padding: 10px;
+  width: 162%;
+  padding: 15px;
   border: 3px solid #000;
   border-radius: 5px;
 }
@@ -148,35 +146,85 @@ iframe {
 .contact-content {
   display: flex;
   flex-direction: row;
-  gap: 2rem;
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  width: 100%;
+  width: 70%;
+  padding: 1rem;
+  margin: 2rem 0;
+  background-color: #fff;
+  border: 0.5rem solid #000;
+  border-radius: 1rem;
+  box-shadow: 15px 15px 0 #af97ff;
 }
 
 .map-container {
   flex: 1 1 300px;
   background-color: #fff;
-  border: 0.5rem solid #000;
   border-radius: 1rem;
   padding: 1rem;
-  box-shadow: 15px 15px 0 #af97ff;
   max-width: 15rem;
   max-height: 22rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .map-container iframe {
   width: 100%;
-  height: 200px;
+  height: 300px;
   border: 1px solid black;
   border-radius: 10px;
 }
 
-.map-container small {
-  display: block;
+.map-container .map-link {
   margin-top: 10px;
   text-align: center;
+  width: 100%;
+}
+
+button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  font-family: "Victor Mono", monospace;
+  font-size: 14px;
+  color: #000;
+  background-color: #ff97fc;
+  text-decoration: none;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 4px 4px 0 #000;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #af97ff;
+  color: #fff;
+  box-shadow: 2px 2px 0 #000;
+  transform: translateY(-2px);
+}
+
+.map-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  font-family: "Victor Mono", monospace;
+  font-size: 14px;
+  color: #000;
+  background-color: #ff97fc;
+  text-decoration: none;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 4px 4px 0 #000;
+  transition: all 0.3s ease;
+}
+
+.map-button:hover {
+  background-color: #af97ff;
+  color: #fff;
+  box-shadow: 2px 2px 0 #000;
+  transform: translateY(-2px);
 }
 
 .whatsapp-button {
@@ -214,8 +262,14 @@ iframe {
     flex-direction: column;
     text-align: center;
   }
+
   .header ul {
     flex-direction: column;
+  }
+
+  .about {
+    flex-direction: column;
+    align-items: center;
   }
 
   .contact-content {
