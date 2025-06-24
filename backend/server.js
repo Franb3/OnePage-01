@@ -14,10 +14,10 @@ async function enviarCorreo({ name, email, message }) {
   });
 
   await client.send({
-    from: env.EMAIL_USER,
+    from: `${name} <${env.EMAIL_USER}>`,
     to: env.EMAIL_USER,
-    subject: `Mensaje de ${name}`,
-    content: `Correo de: ${email}\n\nMensaje:\n${message}`,
+    subject: `Mensaje de ${email}`,
+    content: message,
   });
 
   await client.close();
