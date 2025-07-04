@@ -244,6 +244,18 @@ button:hover {
   animation: parpadeo 5s infinite;
 }
 
+.error-404 {
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url("/public/error.webp") no-repeat center center/cover;
+}
+
 @keyframes parpadeo {
   0% {
     opacity: 1;

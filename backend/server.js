@@ -1,4 +1,5 @@
 import { serve } from "https://deno.land/std@0.224.0/http/server.ts";
+import { serveDir } from "https://deno.land/std@0.224.0/http/file_server.ts";
 import { SmtpClient } from "https://deno.land/x/smtp/mod.ts";
 import { load } from "https://deno.land/std@0.224.0/dotenv/mod.ts";
 
@@ -61,5 +62,10 @@ serve(async (req) => {
     }
   }
 
-  return new Response("Not Found", { status: 404 });
+  return serveDir(req, {
+    fsRoot: "./dist",
+    urlRoot: "",
+    showDirListing: false,
+    defaultDocument: "index.html",
+  });
 });
